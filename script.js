@@ -20,7 +20,7 @@
   document.addEventListener('click', event => {
     if (!event.target.closest('.site-header') && menu.getAttribute('aria-expanded') === 'true') setMenu(false);
   });
-  matchMedia('(min-width: 701px)').addEventListener('change', () => setMenu(false));
+  matchMedia('(min-width: 861px)').addEventListener('change', () => setMenu(false));
   const navLinks = [...nav.querySelectorAll('a[href^="#"]')];
   function markCurrent(hash) {
     navLinks.forEach(link => {
@@ -41,7 +41,8 @@
   const status = document.querySelector('#search-status');
   const emptyState = document.querySelector('#empty-state');
   let category = 'all';
-  document.querySelector('.writing-tools').hidden = false;
+  document.querySelector('.search-widget').hidden = false;
+  document.querySelector('.category-widget').hidden = false;
   function filterArticles() {
     const query = search.value.trim().normalize('NFKC').toLocaleLowerCase();
     let visible = 0;
@@ -56,16 +57,9 @@
     filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
   }
   search.addEventListener('input', filterArticles);
-  filters.forEach(button => button.addEventListener('click', () => { category = button.dataset.category; filterArticles(); }));
-  document.querySelector('.reset-search').addEventListener('click', () => { category = 'all'; search.value = ''; filterArticles(); search.focus(); });
+  const showWriting = () => document.querySelector('#writing').scrollIntoView({block: 'start'});
+  document.querySelector('#search-form').addEventListener('submit', event => { event.preventDefault(); filterArticles(); showWriting(); });
+  filters.forEach(button => button.addEventListener('click', () => { category = button.dataset.category; filterArticles(); showWriting(); }));
+  document.querySelector('.reset-search').addEventListener('click', () => { category = 'all'; search.value = ''; filterArticles(); showWriting(); });
 
-  const copy = document.querySelector('.copy-email');
-  const copyStatus = document.querySelector('.copy-status');
-  if (navigator.clipboard && window.isSecureContext) {
-    copy.hidden = false;
-    copy.addEventListener('click', async () => {
-      try { await navigator.clipboard.writeText('tophung48162@gmail.com'); copyStatus.textContent = '邮箱已复制'; }
-      catch { copyStatus.textContent = '复制未成功，可选中邮箱地址手动复制。'; }
-    });
-  }
 })();

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="236" viewBox="0 0 420 236" role="img" aria-labelledby="title desc">
+  <title id="title">RAG 文章题图</title>
+  <desc id="desc">低饱和绿色背景，文档卡片、检索圆环与连接线组成的原创设计插图。</desc>
+  <rect width="420" height="236" fill="#e7eee7"/>
+  <circle cx="44" cy="220" r="130" fill="#dce7dd"/>
+  <g fill="#f7faf6" stroke="#9db7a5" stroke-width="2">
+    <rect x="79" y="37" width="83" height="112" rx="9" transform="rotate(-8 120 93)"/>
+    <rect x="94" y="35" width="83" height="112" rx="9"/>
+  </g>
+  <g fill="#91ad9a">
+    <rect x="110" y="56" width="31" height="7" rx="3.5"/>
+    <rect x="110" y="77" width="50" height="5" rx="2.5"/>
+    <rect x="110" y="91" width="50" height="5" rx="2.5"/>
+    <rect x="110" y="105" width="35" height="5" rx="2.5"/>
+  </g>
+  <g fill="none" stroke="#779882" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M190 92h35m-7-7 7 7-7 7"/>
+    <circle cx="269" cy="81" r="33" fill="#f2f7ef"/>
+    <path d="m293 105 26 26" stroke-width="9"/>
+  </g>
+  <g fill="#94ad83">
+    <rect x="251" y="68" width="36" height="6" rx="3"/>
+    <rect x="251" y="81" width="25" height="6" rx="3"/>
+    <rect x="251" y="94" width="31" height="6" rx="3"/>
+  </g>
+  <text x="210" y="207" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="4" fill="#486a53">RAG</text>
+</svg>
