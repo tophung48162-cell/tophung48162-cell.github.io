@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="236" viewBox="0 0 420 236" role="img" aria-labelledby="title desc">
+  <title id="title">AI 商业化文章题图</title>
+  <desc id="desc">低饱和暖棕色背景，抽象数据卡片与几何柱形组成的原创设计插图，无实际业绩数据。</desc>
+  <rect width="420" height="236" fill="#f0e8df"/>
+  <circle cx="364" cy="214" r="137" fill="#e8dbcd"/>
+  <rect x="83" y="35" width="254" height="121" rx="16" fill="#faf6ef" stroke="#c9b49d" stroke-width="2"/>
+  <g fill="#b89b7c">
+    <rect x="103" y="53" width="39" height="6" rx="3"/>
+    <rect x="148" y="53" width="22" height="6" rx="3" opacity=".45"/>
+    <circle cx="313" cy="56" r="4"/>
+  </g>
+  <path d="M107 133h205" stroke="#dfd0c0" stroke-width="2"/>
+  <rect x="114" y="94" width="24" height="39" rx="4" fill="#d0bda5"/>
+  <rect x="149" y="81" width="24" height="52" rx="4" fill="#b69a7b"/>
+  <rect x="184" y="101" width="24" height="32" rx="4" fill="#d0bda5"/>
+  <circle cx="270" cy="102" r="27" fill="none" stroke="#e1d2c1" stroke-width="12"/>
+  <path d="M270 75a27 27 0 0 1 27 27" fill="none" stroke="#a58a6e" stroke-width="12" stroke-linecap="round"/>
+  <text x="210" y="207" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="1.5" fill="#79624b">AI / BUSINESS</text>
+</svg>

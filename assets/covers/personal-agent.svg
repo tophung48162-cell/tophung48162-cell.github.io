@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="236" viewBox="0 0 420 236" role="img" aria-labelledby="title desc">
+  <title id="title">Personal Agent 文章题图</title>
+  <desc id="desc">低饱和蓝色背景，抽象节点与中央卡片相连的原创设计插图。</desc>
+  <rect width="420" height="236" fill="#e7edf0"/>
+  <circle cx="350" cy="30" r="100" fill="#dce5e9"/>
+  <g fill="none" stroke="#8cabb6" stroke-width="3">
+    <path d="M100 75h52m116 0h52M210 124v28"/>
+    <path d="M115 130h37M268 130h37" stroke-dasharray="5 7"/>
+  </g>
+  <rect x="150" y="30" width="120" height="108" rx="23" fill="#f8fafb" stroke="#adc0c8" stroke-width="2"/>
+  <g fill="#537b8d">
+    <rect x="177" y="57" width="29" height="29" rx="8"/>
+    <rect x="214" y="57" width="29" height="29" rx="8" opacity=".45"/>
+    <rect x="177" y="94" width="66" height="7" rx="3.5" opacity=".45"/>
+    <rect x="177" y="108" width="42" height="7" rx="3.5" opacity=".25"/>
+  </g>
+  <g fill="#f5f8f9" stroke="#8cabb6" stroke-width="2">
+    <circle cx="85" cy="75" r="20"/>
+    <circle cx="335" cy="75" r="20"/>
+    <circle cx="210" cy="159" r="9"/>
+    <circle cx="105" cy="130" r="8"/>
+    <circle cx="315" cy="130" r="8"/>
+  </g>
+  <g stroke="#537b8d" stroke-width="3" stroke-linecap="round">
+    <path d="M78 75h14m-7-7v14M329 75h12"/>
+  </g>
+  <text x="210" y="207" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="1.5" fill="#355968">PERSONAL AGENT</text>
+</svg>
