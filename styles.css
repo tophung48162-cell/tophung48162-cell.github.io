@@ -65,6 +65,7 @@ h2 { font-size: 48px; line-height: 1.16; letter-spacing: -1.1px; }
 .feature-card { flex: 0 0 430px; min-width: 0; background: var(--white); border-radius: var(--radius); padding: 36px 36px 30px; overflow: hidden; scroll-snap-align: start; }
 .card-kicker { font-size: 12px; font-weight: 600; letter-spacing: -.1px; margin-bottom: 16px; color: var(--slate); }
 .feature-card h3 { font-size: 32px; line-height: 1.27; letter-spacing: -.7px; }
+.feature-card h3 a:hover { color: var(--link); }
 .card-visual { height: 250px; margin: 26px -8px 12px; position: relative; display: flex; align-items: center; justify-content: center; }
 .feature-copy { font-size: 15px; color: var(--slate); line-height: 1.75; letter-spacing: -.2px; }
 .question-note { position: absolute; width: 240px; height: 172px; padding: 23px; border-radius: 13px; border: 1px solid #dedee3; background: var(--frost); }
