@@ -11,8 +11,8 @@
   <meta property="og:url" content="https://tophung48162-cell.github.io/">
   <link rel="canonical" href="https://tophung48162-cell.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261103-reference2">
-  <script src="script.js?v=20261103-reference2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261103-search3">
+  <script src="script.js?v=20261103-search3" defer></script>
   <title>商棋 · 产品、AI 与实践</title>
 </head>
 <body>
@@ -33,6 +33,12 @@
   </header>
 
   <div class="container layout" id="home">
+      <section class="widget search-widget" id="search" aria-labelledby="search-title">
+        <h2 id="search-title">搜索</h2>
+        <form id="search-form" role="search"><label class="sr-only" for="article-search">搜索文章关键词，按回车查看结果</label><input id="article-search" type="search" placeholder="搜索文章关键词…" autocomplete="off" aria-controls="writing" enterkeyhint="search" disabled></form>
+        <div class="search-feedback" hidden><p id="search-status" role="status" aria-live="polite"></p><a href="#writing">查看结果 →</a></div>
+        <noscript><p class="search-help">搜索需要启用 JavaScript，也可以直接浏览下方的全部文章。</p></noscript>
+      </section>
     <main id="main">
       <h1 class="sr-only" id="page-title">商棋的个人网站：项目、文章与 AI 实践</h1>
       <nav class="highlights" aria-label="内容速览">
@@ -113,7 +119,6 @@
     </main>
 
     <aside class="sidebar" aria-label="个人信息与联系">
-      <section class="widget search-widget" id="search" aria-labelledby="search-title" hidden><h2 id="search-title">搜索</h2><form id="search-form" role="search"><label class="sr-only" for="article-search">搜索文章关键词，按回车查看结果</label><input id="article-search" type="search" placeholder="搜索文章关键词…" autocomplete="off"></form><p class="sr-only" id="search-status" role="status" aria-live="polite"></p></section>
       <section class="widget about-widget" id="about" aria-labelledby="about-title">
         <div class="profile-heading"><img class="avatar" src="assets/avatar.jpg" alt="商棋的个人头像" width="72" height="72"><div><h2 id="about-title">商棋</h2><p>AI 产品经理 · 环境设计学士</p></div></div>
         <div class="about-text"><p>商棋，一名拥有环境设计背景的 AI 产品经理。</p><p>关注真实需求、用户体验与 AI 应用，把想法一步步做成可验证的产品原型。</p><p>这个网站用来记录我的项目实践，以及对 AI 技术与产品的观察和思考。</p></div>
