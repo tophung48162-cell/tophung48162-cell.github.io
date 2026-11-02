@@ -39,9 +39,9 @@
   const articles = [...document.querySelectorAll('.article-row')];
   const filters = [...document.querySelectorAll('button[data-category]')];
   const status = document.querySelector('#search-status');
+  const feedback = document.querySelector('.search-feedback');
   const emptyState = document.querySelector('#empty-state');
   let category = 'all';
-  document.querySelector('.search-widget').hidden = false;
   document.querySelector('.category-widget').hidden = false;
   function filterArticles() {
     const query = search.value.trim().normalize('NFKC').toLocaleLowerCase();
@@ -54,6 +54,7 @@
     }
     emptyState.hidden = visible !== 0;
     status.textContent = `找到 ${visible} 篇文章`;
+    feedback.hidden = !query && category === 'all';
     filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
   }
   search.addEventListener('input', filterArticles);
@@ -61,5 +62,5 @@
   document.querySelector('#search-form').addEventListener('submit', event => { event.preventDefault(); filterArticles(); showWriting(); });
   filters.forEach(button => button.addEventListener('click', () => { category = button.dataset.category; filterArticles(); showWriting(); }));
   document.querySelector('.reset-search').addEventListener('click', () => { category = 'all'; search.value = ''; filterArticles(); showWriting(); });
-
+  search.disabled = false;
 })();
