@@ -3,109 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="你好，我是商棋，一名 AI 产品经理。从真实问题出发，探索 AI、产品与人的连接。">
-  <meta property="og:title" content="商棋 · AI 产品经理">
-  <meta property="og:description" content="把 AI 的可能，变成好用的产品。">
+  <meta name="theme-color" content="#faf8f5">
+  <meta name="description" content="商棋的个人网站。一名 AI 产品经理的项目实践、技术写作与产品思考。">
+  <meta property="og:title" content="商棋 · 产品、AI 与实践">
+  <meta property="og:description" content="从真实需求出发，把 AI 的可能性变成可用的产品。探索项目、文章与我的工作方式。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tophung48162-cell.github.io/">
   <link rel="canonical" href="https://tophung48162-cell.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
-  <title>商棋 · AI 产品经理</title>
+  <title>商棋 · 产品、AI 与实践</title>
 </head>
 <body>
+  <div class="ambient" aria-hidden="true"></div>
   <a class="skip-link" href="#main">跳转到主要内容</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></symbol>
+    <symbol id="icon-nodes" viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="6" rx="2"/><rect x="2" y="16" width="7" height="5" rx="1.5"/><rect x="15" y="16" width="7" height="5" rx="1.5"/><path d="M12 9v4m-7 3v-3h14v3"/></symbol>
+    <symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 8V6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Zm0 2h18M8 15h8"/></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24"><path d="m14 4 6 6M4 20l2-7L16 3a2 2 0 0 1 3 0l2 2a2 2 0 0 1 0 3L11 18l-7 2Zm2-7 5 5"/></symbol>
+    <symbol id="icon-cube" viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 10 9-5M12 12 3 7m9 5v10M7.5 4.5l9 5"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+  </defs></svg>
+
   <header class="site-header">
-    <nav class="nav-shell" aria-label="主导航">
-      <a class="wordmark" href="#top" aria-label="商棋，返回首页">商棋<span>SHANG QI</span></a>
-      <div class="nav-links">
-        <a href="#explore">关注方向</a>
-        <a href="#about">关于我</a>
-        <a href="#notes">思考手记</a>
-      </div>
-      <a class="pill pill-small" href="https://github.com/tophung48162-cell" target="_blank" rel="noopener noreferrer">我的 GitHub <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M4 4h8v8"/></svg></a>
-    </nav>
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="商棋，回到首页"><span class="brand-mark">棋</span><span class="brand-name">商棋</span><span class="brand-role">AI 产品经理</span></a>
+      <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav" hidden><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="#home" aria-current="location">首页</a><a href="#projects">项目</a><a href="#writing">文章</a><a href="#skills">技能</a><a href="#about">关于</a>
+        <a class="nav-github" href="https://github.com/tophung48162-cell" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </nav>
+    </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">商棋 · AI 产品经理</p>
-        <h1 id="hero-title">把 AI 的可能，<br>变成好用的产品。</h1>
-        <p class="hero-description">从一个真实问题开始，<span>连接技术、体验与人的需要。</span></p>
-        <div class="hero-actions">
-          <a class="pill" href="#explore">探索我的关注</a>
-          <a class="blue-link" href="#about">认识我 <svg aria-hidden="true" viewBox="0 0 16 16"><path d="m6 3 5 5-5 5"/></svg></a>
-        </div>
-      </div>
-      <figure class="hero-stage">
-        <img src="assets/hero-studio.png" alt="白色工作台上的银色笔记本电脑与草图本，屏幕展示从探索、设计到验证的产品构想画布" width="1774" height="887" fetchpriority="high">
-        <figcaption>一个想法，一次推敲，<span>一点更好的体验。</span></figcaption>
-      </figure>
-      <nav class="chapter-nav" aria-label="页面章节">
-        <a href="#explore">发现问题<svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg></a>
-        <a href="#about">认识商棋<svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg></a>
-        <a href="#notes">继续思考<svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg></a>
+  <div class="container layout" id="home">
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">PRODUCT · AI · WRITING</p>
+        <h1 id="page-title">从真实需求出发，<br>把 AI 的可能性变成可用的产品。</h1>
+        <p class="intro-note">你好，我是商棋。这里记录我的项目实践，也收集我对 AI 的观察与思考。</p>
+      </section>
+      <nav class="highlights" aria-label="内容速览">
+        <a class="highlight" href="#projects"><span class="highlight-top"><strong>04</strong><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span><h2>项目实践</h2><p>从需求走向可用的原型</p></a>
+        <a class="highlight" href="#writing"><span class="highlight-top"><strong>05</strong><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span><h2>文章与思考</h2><p>用文字整理技术与产品</p></a>
+        <a class="highlight" href="#about"><span class="highlight-top"><strong class="about-symbol">↗</strong><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span><h2>关于商棋</h2><p>设计背景，产品视角</p></a>
       </nav>
-    </section>
 
-    <section class="highlights section-band" id="explore" aria-labelledby="explore-title">
-      <div class="section-heading content-width">
-        <div><p class="section-kicker">关注方向</p><h2 id="explore-title">好的产品，<br class="mobile-break">从好问题开始。</h2></div>
-        <p class="section-aside">三种视角。一个出发点：人。</p>
-      </div>
-      <div class="gallery-wrap">
-        <div class="gallery" id="focus-gallery" tabindex="0" role="region" aria-label="三个产品关注方向，可左右滚动">
-          <article class="feature-card" id="focus-discover">
-            <p class="card-kicker">01 · 用户洞察</p>
-            <h3><a href="https://mp.weixin.qq.com/s/bJ2p_5ZQaRsRB9_Wa1sP7g" target="_blank" rel="noopener noreferrer">先理解人，<br>再定义问题。</a></h3>
-            <div class="discovery-visual card-visual" aria-hidden="true">
-              <div class="question-note note-back"><span>SCENARIO</span><strong>谁在使用？</strong><div class="note-lines"><i></i><i></i></div></div>
-              <div class="question-note note-front"><span>THE RIGHT QUESTION</span><strong>什么值得改变？</strong><div class="note-lines"><i></i><i></i></div><svg viewBox="0 0 48 48"><circle cx="22" cy="22" r="12"/><path d="m31 31 9 9M17 22h10M22 17v10"/></svg></div>
-            </div>
-            <p class="feature-copy">走进具体场景，理解用户的动机与困难，找到真正值得解决的那个问题。</p>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading"><h2 id="projects-title"><span class="heading-dot" aria-hidden="true"></span>项目实践</h2><a class="text-link" href="https://github.com/tophung48162-cell?tab=repositories" target="_blank" rel="noopener noreferrer">全部仓库 <span aria-hidden="true">↗</span></a></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon orange"><svg class="icon" aria-hidden="true"><use href="#icon-nodes"/></svg></span><span class="project-type">AI / 知识服务</span></div>
+            <h3><a href="https://github.com/tophung48162-cell/enterprise-rag-hub" target="_blank" rel="noopener noreferrer">知枢 · 企业知识中台</a></h3>
+            <p class="project-description">让企业资料走进 AI 的回答。串联知识导入、文档分块、检索重排、问答与运行追踪。</p>
+            <div class="tags" aria-label="项目技术"><span>React</span><span>FastAPI</span><span>LangChain</span></div>
+            <p class="project-note">开发中原型 · 云服务与完整基础设施仍在验证</p>
+            <div class="project-links"><a href="https://github.com/tophung48162-cell/enterprise-rag-hub" target="_blank" rel="noopener noreferrer">查看项目 <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
           </article>
-          <article class="feature-card" id="focus-design">
-            <p class="card-kicker">02 · AI 产品体验</p>
-            <h3>复杂的能力。<br>简单的体验。</h3>
-            <div class="experience-visual card-visual" aria-hidden="true">
-              <div class="mini-window"><div class="window-top"><span></span><span></span><span></span><i>产品构想</i></div><div class="prompt-row"><span class="sparkle">✳</span><span>让一个想法，更进一步。</span></div><div class="response-row"><div class="response-icon"><svg viewBox="0 0 28 28"><path d="m8 14 4 4 8-9"/></svg></div><div><strong>清晰的下一步</strong><p>理解意图，给出有用的反馈。</p></div></div><div class="mini-input"><span>从你的问题开始</span><span class="input-arrow">↑</span></div></div>
-            </div>
-            <p class="feature-copy">把模型的能力放进自然的交互，让用户看得懂、用得顺，也能掌控结果。</p>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon blue"><svg class="icon" aria-hidden="true"><use href="#icon-folder"/></svg></span><span class="project-type">产品 / 业务工具</span></div>
+            <h3><a href="https://github.com/tophung48162-cell/lawsuit-staff-admin" target="_blank" rel="noopener noreferrer">诉状工作人员后台</a></h3>
+            <p class="project-description">围绕实际业务流程，把案件办理、收退款台账和统计报表整理到一个工作台，适配手机使用。</p>
+            <div class="tags" aria-label="项目技术"><span>React</span><span>TypeScript</span><span>Cloudflare D1</span></div>
+            <p class="project-note">业务工具 · 包含服务端与数据库实现</p>
+            <div class="project-links"><a href="https://github.com/tophung48162-cell/lawsuit-staff-admin" target="_blank" rel="noopener noreferrer">查看项目 <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
           </article>
-          <article class="feature-card" id="focus-validate">
-            <p class="card-kicker">03 · 价值验证</p>
-            <h3>好不好用，<br>让真实任务回答。</h3>
-            <div class="validation-visual card-visual" aria-hidden="true">
-              <div class="validation-sheet"><div class="sheet-heading">回到真实场景<span>↗</span></div><div class="check-row"><span>任务能否完成</span><span>✓</span></div><div class="check-row"><span>结果是否可靠</span><span>✓</span></div><div class="check-row"><span>体验能否掌控</span><span>✓</span></div><div class="sheet-foot">观察 · 验证 · 再迭代</div></div>
-            </div>
-            <p class="feature-copy">在质量、体验与成本之间做取舍，用真实使用中的反馈，找到下一步。</p>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon purple"><svg class="icon" aria-hidden="true"><use href="#icon-pen"/></svg></span><span class="project-type">AI / 创作工具</span></div>
+            <h3><a href="https://github.com/tophung48162-cell/liubai-romance" target="_blank" rel="noopener noreferrer">留白 · 言情写作</a></h3>
+            <p class="project-description">把中文短篇的写作方法整理成可安装的 Skill，配套提示词生成、示例切换与下载页面。</p>
+            <div class="tags" aria-label="项目技术"><span>Prompt</span><span>Codex Skill</span><span>JavaScript</span></div>
+            <p class="project-note">写作 Skill · 小说生成由支持 Skill 的助手完成</p>
+            <div class="project-links"><a href="https://github.com/tophung48162-cell/liubai-romance" target="_blank" rel="noopener noreferrer">查看项目 <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon teal"><svg class="icon" aria-hidden="true"><use href="#icon-cube"/></svg></span><span class="project-type">设计 / 交互探索</span></div>
+            <h3><a href="https://github.com/tophung48162-cell/keep-motion" target="_blank" rel="noopener noreferrer">Keep · 运动主题交互展示</a></h3>
+            <p class="project-description">冰屋场景、可点击冰块与粒子字形，探索 3D 空间、滚动叙事和声音交互的组合。</p>
+            <div class="tags" aria-label="项目技术"><span>3D 场景</span><span>粒子交互</span><span>JavaScript</span></div>
+            <p class="project-note">非商业学习展示 · 使用第三方引擎与视觉素材</p>
+            <div class="project-links"><a href="https://tophung48162-cell.github.io/keep-motion/" target="_blank" rel="noopener noreferrer">在线体验 <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><a class="secondary-link" href="https://github.com/tophung48162-cell/keep-motion" target="_blank" rel="noopener noreferrer">源码 ↗</a></div>
           </article>
         </div>
-      </div>
-      <div class="gallery-controls content-width"><p>保持好奇，也保持求证。</p><div><button class="round-button" id="gallery-prev" aria-label="上一个关注方向" aria-controls="focus-gallery" disabled><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m12 5-5 5 5 5"/></svg></button><button class="round-button" id="gallery-next" aria-label="下一个关注方向" aria-controls="focus-gallery"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="m8 5 5 5-5 5"/></svg></button></div></div>
-    </section>
+      </section>
 
-    <section class="about content-width" id="about" aria-labelledby="about-title">
-      <div class="about-heading"><p class="section-kicker">关于商棋</p><h2 id="about-title">技术向前。<br><span>目光向人。</span></h2></div>
-      <div class="about-copy"><p class="about-lead">你好，我是商棋。<br>一名对人和技术都充满好奇的<br class="desktop-break"> AI 产品经理。</p><p>我关注 AI 能做什么，也关心它如何进入一个人的日常。一个更清楚的反馈、一个更顺手的流程，都可能是产品价值开始发生的地方。</p><p>这里是我的个人空间，用来记录观察、整理思考，也为接下来的作品和实践留一个位置。</p><a class="blue-link" href="https://github.com/tophung48162-cell" target="_blank" rel="noopener noreferrer">在 GitHub 了解更多 <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M4 4h8v8"/></svg></a></div>
-    </section>
-
-    <section class="notes-section section-band" id="notes" aria-labelledby="notes-title">
-      <div class="content-width notes-layout">
-        <div class="notes-intro"><p class="section-kicker">思考手记</p><h2 id="notes-title">一些问题，<br>值得反复想。</h2><p>关于 AI、产品，<br>以及两者之间的人。</p></div>
-        <div class="notes-list">
-          <details class="note"><summary><span class="note-index">01</span><h3>从「能做到」到「值得做」。</h3><span class="expand-icon" aria-hidden="true"></span></summary><div class="note-body"><p>模型能完成一个任务，只是起点。这个任务多久发生一次？现在的解决方式有什么不足？使用 AI 后，用户能获得什么清晰的改善？</p><p>这些问题，决定了一个能力是否值得成为产品。</p></div></details>
-          <details class="note"><summary><span class="note-index">02</span><h3>好的 AI 体验，如何建立信任？</h3><span class="expand-icon" aria-hidden="true"></span></summary><div class="note-body"><p>让用户知道系统正在做什么、结果依据什么，以及出错后能如何修正。</p><p>信任可以从明确能力边界、提供可检查的结果和保留用户控制权这些小事开始。</p></div></details>
-          <details class="note"><summary><span class="note-index">03</span><h3>用真实任务，衡量真实价值。</h3><span class="expand-icon" aria-hidden="true"></span></summary><div class="note-body"><p>一次亮眼的演示，和长期可用的产品之间，还有很多细节。</p><p>选择有代表性的真实任务，观察完成质量、时间成本与失败方式，才能找到下一轮迭代真正要解决的问题。</p></div></details>
+      <section class="section" id="writing" aria-labelledby="writing-title">
+        <div class="section-heading"><h2 id="writing-title"><span class="heading-dot" aria-hidden="true"></span>文章与思考</h2><span class="section-note">写在微信公众号</span></div>
+        <p class="section-intro">从产品经理的视角，记录对 AI 技术与产品的观察。</p>
+        <div class="writing-tools" hidden>
+          <label class="search-field"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg><span class="sr-only">搜索文章标题或关键词</span><input id="article-search" type="search" placeholder="搜索文章标题或关键词…" autocomplete="off"></label>
+          <div class="filters" role="group" aria-label="按文章分类筛选"><button type="button" data-category="all" aria-pressed="true">全部 <span>5</span></button><button type="button" data-category="模型观察" aria-pressed="false">模型观察 <span>2</span></button><button type="button" data-category="产品思考" aria-pressed="false">产品思考 <span>2</span></button><button type="button" data-category="技术解读" aria-pressed="false">技术解读 <span>1</span></button></div>
+          <p class="sr-only" id="search-status" role="status" aria-live="polite"></p>
         </div>
-      </div>
-    </section>
+        <div class="article-list">
+          <article class="article-row" data-category="产品思考" data-keywords="Personal Agent 智能体 个性化 AI 选择"><div class="article-marker" aria-hidden="true">01</div><div class="article-content"><p class="article-meta"><span>产品思考</span><span>Personal Agent</span></p><h3><a href="https://mp.weixin.qq.com/s/TKu_leT6_XhVCp2r1Y6bMw" target="_blank" rel="noopener noreferrer">当 AI 开始替你做选择：Personal Agent 如何理解你，又服务于谁？</a></h3></div><span class="article-arrow" aria-hidden="true">↗</span></article>
+          <article class="article-row" data-category="技术解读" data-keywords="RAG 检索增强生成 知识库 资料"><div class="article-marker" aria-hidden="true">02</div><div class="article-content"><p class="article-meta"><span>技术解读</span><span>RAG / 知识库</span></p><h3><a href="https://mp.weixin.qq.com/s/ICHt32TD2SSFs_-rRylugQ" target="_blank" rel="noopener noreferrer">让 AI 用上你的资料，RAG 是怎么做到的？</a></h3></div><span class="article-arrow" aria-hidden="true">↗</span></article>
+          <article class="article-row" data-category="产品思考" data-keywords="Anthropic 商业化 招股书 盈利"><div class="article-marker" aria-hidden="true">03</div><div class="article-content"><p class="article-meta"><span>产品思考</span><span>AI 商业化</span></p><h3><a href="https://mp.weixin.qq.com/s/Lx5ih8VMMzRVbA3_fSm4dA" target="_blank" rel="noopener noreferrer">Anthropic 发布招股书，AI 真的开始赚钱了吗？</a></h3></div><span class="article-arrow" aria-hidden="true">↗</span></article>
+          <article class="article-row" data-category="模型观察" data-keywords="Kimi K3.1 Pro 模型"><div class="article-marker" aria-hidden="true">04</div><div class="article-content"><p class="article-meta"><span>模型观察</span><span>Kimi</span></p><h3><a href="https://mp.weixin.qq.com/s/MJGpV6xZNLiZVNvPDu-00A" target="_blank" rel="noopener noreferrer">Kimi K3.1 Pro，凭什么杀回第一梯队？</a></h3></div><span class="article-arrow" aria-hidden="true">↗</span></article>
+          <article class="article-row" data-category="模型观察" data-keywords="DeepSeek 开源 基础设施 发动机"><div class="article-marker" aria-hidden="true">05</div><div class="article-content"><p class="article-meta"><span>模型观察</span><span>DeepSeek / 开源</span></p><h3><a href="https://mp.weixin.qq.com/s/C6J4u0Zc45dgEdhTqjDnWg" target="_blank" rel="noopener noreferrer">DeepSeek 把模型背后的“发动机”也开源了</a></h3></div><span class="article-arrow" aria-hidden="true">↗</span></article>
+        </div>
+        <div class="empty-state" id="empty-state" hidden><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg><h3>没有找到相关的文章</h3><p>试试「RAG」「模型」或其他关键词。</p><button class="reset-search" type="button">查看全部文章 <span aria-hidden="true">→</span></button></div>
+        <p class="reading-note">点击标题，前往微信阅读原文 <span aria-hidden="true">↗</span></p>
+      </section>
 
-    <section class="closing" aria-labelledby="closing-title"><p class="section-kicker">下一步，继续创造。</p><h2 id="closing-title">保持好奇。<br>让想法慢慢成形。</h2><p>更多作品与观察，正在路上。</p><a class="pill" href="https://github.com/tophung48162-cell" target="_blank" rel="noopener noreferrer">在 GitHub 相遇 <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M4 4h8v8"/></svg></a></section>
-  </main>
-  <footer class="site-footer"><div class="content-width"><p>© <span id="year">2026</span> 商棋<span class="footer-separator">·</span>AI 产品经理</p><a href="#top">回到顶部 <span aria-hidden="true">↑</span></a></div></footer>
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading"><h2 id="skills-title"><span class="heading-dot" aria-hidden="true"></span>技能与工作方式</h2><span class="section-note">从思考到实践</span></div>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-number" aria-hidden="true">01</span><div><h3>产品研究与设计</h3><p>梳理真实场景与业务流程，把模糊需求变成清晰的功能和可验证的原型。</p><div class="skill-tags"><span>需求分析</span><span>产品设计</span><span>原型验证</span></div></div></div>
+          <div class="skill-row"><span class="skill-number" aria-hidden="true">02</span><div><h3>AI 应用与评测</h3><p>围绕 RAG、知识库与 Prompt 设计应用，用真实任务关注模型的质量、成本和体验边界。</p><div class="skill-tags"><span>RAG</span><span>Prompt / Skill</span><span>模型评测</span></div></div></div>
+          <div class="skill-row"><span class="skill-number" aria-hidden="true">03</span><div><h3>原型实现与技术写作</h3><p>借助 AI 编程工具搭建前后端原型，通过 GitHub 管理与发布，用通俗文字整理实践和观察。</p><div class="skill-tags"><span>React / TypeScript</span><span>FastAPI</span><span>GitHub</span><span>内容写作</span></div></div></div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="个人信息与联系">
+      <section class="widget about-widget" id="about" aria-labelledby="about-title">
+        <p class="widget-eyebrow">ABOUT ME</p>
+        <div class="profile-heading"><img class="avatar" src="assets/avatar.jpg" alt="商棋的个人头像" width="76" height="76"><div><h2 id="about-title">商棋</h2><p>AI 产品经理</p><span class="english-name">SHANG QI</span></div></div>
+        <p class="about-text">关注 AI 如何走进真实场景，也关心一个产品是否好用。通过研究、原型与写作，把问题想清楚，把想法做出来。</p>
+        <div class="education"><span class="education-label">教育背景</span><strong>环境设计学士学位</strong><span>Bachelor's degree in Environmental Design</span></div>
+        <a class="profile-link" href="https://github.com/tophung48162-cell" target="_blank" rel="noopener noreferrer">在 GitHub 了解更多 <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </section>
+      <section class="widget" aria-labelledby="topics-title"><h2 id="topics-title">关注的方向</h2><div class="topic-tags"><span>AI 产品</span><span>用户体验</span><span>RAG / 知识库</span><span>Agent</span><span>模型评测</span><span>技术写作</span></div><p class="widget-note">理解问题，做出原型，写下思考。</p></section>
+      <section class="widget contact-widget" aria-labelledby="contact-title"><h2 id="contact-title">保持联系</h2><p class="widget-note">聊聊产品、AI，或一个新的想法。</p><a class="contact-link" href="https://github.com/tophung48162-cell" target="_blank" rel="noopener noreferrer"><span>GitHub<span class="contact-detail">tophung48162-cell</span></span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><div class="email-row"><a href="mailto:tophung48162@gmail.com"><span class="sr-only">发送邮件至</span>tophung48162@gmail.com</a><button class="copy-email" type="button" aria-label="复制邮箱地址" hidden><svg class="icon" aria-hidden="true"><use href="#icon-copy"/></svg></button></div><p class="copy-status" role="status" aria-live="polite"></p></section>
+    </aside>
+  </div>
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year">2026</span> 商棋 <span class="footer-divider">/</span> 产品、AI 与实践</p><a href="#home">回到顶部 <span aria-hidden="true">↑</span></a></div></footer>
 </body>
 </html>
